@@ -11,7 +11,7 @@
 						"style":{"spacing":"5"},
 						"components":[
 							{
-								"type":"label", "text":"Fisherman", "style":{ "color":"red" , "size":"12"}
+								"type":"label", "text":"Fisherman", "style":{ "color":"#FF0000" , "size":"12"}
 							}
 						]
 					}
