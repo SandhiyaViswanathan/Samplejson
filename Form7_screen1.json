@@ -612,18 +612,24 @@
                           "type": "label",
                           "name": "checks_description_1",
                           "text": "Sump Pump is operating in remote and on",
-                          "class":"check_style table_row_odd_styles"
+                          "style":{
+                            "width":"50%"
+                          }
                     },
                     {
                       "type": "label",
                       "text": "1",
-                      "class":"number_style center_align table_row_odd_styles"
+                      "style":{
+                        "width":"5%"
+                      }
                     },
                     {
                       "type": "switch",
                       "name": "reagent_operator_switch1",
                       "value": "{{$global.reagent_operator_switch1}}",
-                      "class": "switch_styles switch_label table_row_odd_styles",
+                      "style":{
+                        "width":"20%"
+                      },
                       "contentDescription": "one",
                       "action": {
                         "type": "$global.set",
@@ -636,259 +642,21 @@
                     {
                       "type": "label",
                       "text": "11",
-                      "class":"number_style center_align table_row_odd_styles"
+                      "style":{
+                        "width":"5%"
+                      }
                     },
                     {
                       "type": "textfield",
                       "name": "comments_one",
                       "value": "",
                       "contentDescription": "11",
-                      "class":"comments_label table_row_odd_styles"
-                    }
-                  ],
-                  "class": "no_padding"
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "name": "checks_description_2",
-                      "text": "Four metering pumps are operating",
-                      "class":"check_style table_row_even_styles"
-                    },
-                    {
-                      "type": "label",
-                      "text": "2",
-                      "class":"number_style center_align table_row_even_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "reagent_operator_switch2",
-                      "value": "{{$global.reagent_operator_switch2}}",
-                      "class": "switch_styles switch_label table_row_even_styles",
-                      "contentDescription": "two",
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "section_id": "form7_screen1",
-                          "reagent_operator_switch1": "{{$get.reagent_operator_switch2}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "11",
-                      "class":"number_style center_align table_row_even_styles"
-                    },
-                    {
-                      "type": "textfield",
-                      "name": "comments_two",
-                      "value": "",
-                      "contentDescription": "11",
-                      "class":"comments_label table_row_even_styles"
-                    }
-                  ],
-                  "class": "no_padding"
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "name": "checks_description_3",
-                      "text": "Scrubber fan is running efficiently",
-                      "class":"check_style table_row_odd_styles"
-                    },
-                    {
-                      "type": "label",
-                      "text": "3",
-                      "class":"number_style center_align table_row_odd_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "reagent_operator_switch3",
-                      "value": "{{$global.reagent_operator_switch3}}",
-                      "class": "switch_styles switch_label table_row_odd_styles",
-                      "contentDescription": "three",
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "section_id": "form7_screen1",
-                          "reagent_operator_switch1": "{{$get.reagent_operator_switch3}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "11",
-                      "class":"number_style center_align table_row_odd_styles"
-                    },
-                    {
-                      "type": "textfield",
-                      "name": "comments_three",
-                      "value": "",
-                      "contentDescription": "11",
-                      "class":"comments_label table_row_odd_styles"
-                    }
-                  ],
-                  "class": "no_padding"
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "name": "checks_description_4",
-                      "text": "Eye wash and safety shower checked",
-                      "class":"check_style table_row_even_styles"
-                    },
-                    {
-                      "type": "label",
-                      "text": "4",
-                      "class":"number_style center_align table_row_even_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "reagent_operator_switch4",
-                      "value": "{{$global.reagent_operator_switch4}}",
-                      "class": "switch_styles switch_label table_row_even_styles",
-                      "contentDescription": "four",
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "section_id": "form7_screen1",
-                          "reagent_operator_switch1": "{{$get.reagent_operator_switch4}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "11",
-                      "class":"number_style center_align table_row_even_styles"
-                    },
-                    {
-                      "type": "textfield",
-                      "name": "comments_four",
-                      "value": "",
-                      "contentDescription": "11",
-                      "class":"comments_label table_row_even_styles"
-                    }
-                  ],
-                  "class": "no_padding"
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "name": "checks_description_5",
-                      "text": "No leaks",
-                      "class":"check_style table_row_odd_styles"
-                    },
-                    {
-                      "type": "label",
-                      "text": "5",
-                      "class":"number_style center_align table_row_odd_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "reagent_operator_switch5",
-                      "value": "{{$global.reagent_operator_switch5}}",
-                      "class": "switch_styles switch_label table_row_odd_styles",
-                      "contentDescription": "five",
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "section_id": "form7_screen1",
-                          "reagent_operator_switch1": "{{$get.reagent_operator_switch5}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "11",
-                      "class":"number_style center_align table_row_odd_styles"
-                    },
-                    {
-                      "type": "textfield",
-                      "name": "comments_five",
-                      "value": "",
-                      "contentDescription": "11",
-                      "class":"comments_label table_row_odd_styles"
-                    }
-                  ],
-                  "class": "no_padding"
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "name": "checks_description_6",
-                      "text": "Confirm heat trace is operating (lights at back of the PP next to the door)",
-                      "class":"check_style table_row_even_styles",
                       "style":{
-                        "size":"15",
-                        "padding":"0"
+                        "width":"20%"
                       }
-                    },
-                    {
-                      "type": "label",
-                      "text": "6",
-                      "class":"number_style center_align table_row_even_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "reagent_operator_switch6",
-                      "value": "{{$global.reagent_operator_switch6}}",
-                      "class": "switch_styles switch_label table_row_even_styles",
-                      "contentDescription": "six",
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "section_id": "form7_screen1",
-                          "reagent_operator_switch1": "{{$get.reagent_operator_switch6}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "11",
-                      "class":"number_style center_align table_row_even_styles"
                     }
                   ],
-                  "class": "no_padding"
+                  "class": "no_padding table_row_odd_styles"
                 }
               ]
             },
